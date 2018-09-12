@@ -1,0 +1,25 @@
+/* reset css */
+* {
+    box-sizing: border-box;
+}
+*::before {
+    box-sizing: border-box;
+}
+*::after {
+    box-sizing: border-box;
+}
+html, body, #app{
+    height: 100vh;
+}
+body {
+    margin: 0;
+    background-color: #F2F2F2;
+    font-size: 14px;
+    font-family: Hiragino Sans GB, STHeiti, Microsoft Yahei, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
