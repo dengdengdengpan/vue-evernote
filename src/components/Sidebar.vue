@@ -1,5 +1,6 @@
 <template>
     <div id="sidebar">
+        <Avatar></Avatar>
         <div class="edit-icons">
             <router-link to="/note/:noteId">
                 <svg class="icon icon-allnotes" aria-hidden="true">
@@ -30,8 +31,11 @@
 </template>
 
 <script>
+import Avatar from '@/components/Avatar';
 export default {
-    
+    components: {
+        Avatar
+    }
 }
 </script>
 
