@@ -32,6 +32,7 @@
 
 <script>
 import Avatar from '@/components/Avatar';
+
 export default {
     components: {
         Avatar
@@ -39,33 +40,39 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 #sidebar {
     display: flex;
     flex-direction: column;
     width: 120px;
     background-color: #2A333C;
     color: #F4F8FF;
-}
-#sidebar .edit-icons {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-#sidebar .edit-icons > a {
-    display: block;
-    margin-bottom: 5px;
-    padding: 5px 0 5px 20px;
-}
-#sidebar .edit-icons .router-link-active {
-    background-color: #474E57;
-}
-#sidebar .logout {
-    padding: 10px 0 20px 20px;
-    border-top: 1px solid #3D4650;
-    cursor: pointer;
-}
-#sidebar .icon {
-    fill: #F4F8FF;
+
+    .edit-icons {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+        > a {
+            display: block;
+            margin-bottom: 5px;
+            padding: 5px 0 5px 20px;
+        }
+
+        .router-link-active {
+            background-color: #474E57;
+        }
+    }
+
+    .logout {
+        padding: 10px 0 20px 20px;
+        border-top: 1px solid #3D4650;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .icon {
+        fill: #F4F8FF;
+    }
 }
 </style>

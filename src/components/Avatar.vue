@@ -23,9 +23,9 @@ div.avatar {
     height: 30px;
     margin: 20px auto;
     border-radius: 50%;
-    background-color: #f2b81c;
-    text-shadow: 1px 0 1px #85661d;
+    background-color: #2DBE60;
     text-transform: uppercase;
+    color: #333;
     font-size: 18px;
     font-weight: bold;
 }
