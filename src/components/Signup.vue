@@ -35,12 +35,7 @@
 </template>
 
 <script>
-import request from '@/helpers/request.js';
-
-request('/auth/signin', 'POST', {username: 'dengpan', password: 123456})
-    .then(respData => {
-        console.log(respData);
-    });
+import Auth from '@/apis/auth.js';
 
 export default {
     name: 'Signup',
@@ -93,6 +88,12 @@ export default {
             } else {
                 this.signup.isPasswordError = false;
             }
+            Auth.signup({
+                username: username,
+                password: password
+            }).then(respData => {
+                    console.log(respData);
+            });
         },
         onSignin () {
             console.log('signin')
