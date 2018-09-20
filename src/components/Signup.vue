@@ -35,6 +35,13 @@
 </template>
 
 <script>
+import request from '@/helpers/request.js';
+
+request('/auth/signin', 'POST', {username: 'dengpan', password: 123456})
+    .then(respData => {
+        console.log(respData);
+    });
+
 export default {
     name: 'Signup',
     data () {
